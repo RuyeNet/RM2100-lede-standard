@@ -23,7 +23,7 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
 
 # luci-theme-argon
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/diy/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/diy/luci-theme-argon
 
 # luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/diy/luci-app-adguardhome
