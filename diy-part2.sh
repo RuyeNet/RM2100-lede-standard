@@ -25,14 +25,14 @@ sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
 # luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/diy/luci-theme-argon
 
-# luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/diy/luci-app-adguardhome
-
-# luci-app-oaf
-git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
-
 # openclash
 wget -P package/diy/openclash -c https://github.com/vernesong/OpenClash/archive/refs/heads/master.zip
+
+#openwrt-v2ray
+git clone https://github.com/kuoruan/openwrt-v2ray.git package/diy/openwrt-v2ray
+
+#luci-app-v2ray
+git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git package/diy/luci-app-v2ray
 unzip -o package/diy/openclash/master.zip  -d package/diy/openclash/
 
 # 编译 po2lmo
